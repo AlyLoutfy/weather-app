@@ -1,0 +1,146 @@
+:root {
+  --font: #EC6806;
+  --background: #212121;
+  --backgroundLighter: #212121e8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  color: var(--font);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 70px;
+}
+
+.title {
+  font-size: clamp(1rem, -0.875rem + 7.333vw, 22px);
+  font-weight: 600;
+}
+
+.search-container {
+  display: flex;
+  justify-content: end;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px;
+  padding: 15px 30px;
+  border-radius: 16px;
+  background-color: var(--background);
+}
+
+input:focus {
+  outline: none;
+}
+
+.search button {
+  background-color: var(--background);
+  border: none;
+  color: var(--font);
+  font-weight: 600;
+}
+
+.city {
+  border: none;
+  text-align: center;
+  background-color: var(--background);
+  color: var(--font);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.search-btn {
+  cursor: pointer;
+}
+
+.main-info {
+  position: absolute;
+  top: 30%;
+  margin-left: 10%;
+}
+
+.condition,
+.location {
+  font-size: clamp(1rem, -0.875rem + 12.333vw, 36px);
+  /* color: #fff; */
+  text-transform: uppercase;
+}
+
+.condition {
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 18px);
+}
+
+.temp {
+  font-size: 150px;
+  font-weight: 700;
+}
+
+.temp::after {
+  content: '\00B0 C';
+  font-size: 35px;
+  position: absolute;
+}
+
+.details-container {
+  display: flex;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px;
+  gap: 15px;
+  padding-left: 50px;
+  border-left: #bfbfbf solid 2px;
+  font-size: clamp(1rem, -0.875rem + 6.333vw, 16px);
+}
+
+.feels::after {
+  content: '\00B0 C';
+  font-size: 12px;
+  position: absolute;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 10px 30px;
+  }
+
+  .details-container {
+    flex-direction: column;
+  }
+
+  .details {
+    align-items: baseline;
+    justify-content: baseline;
+    padding: 0;
+    border: none;
+    border-top: #bfbfbf solid 2px;
+    padding-top: 50px;
+  }
+}
