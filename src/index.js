@@ -1,5 +1,4 @@
 import './assets/style.css';
-import * as test from './dom.js';
 
 async function getWeather(location) {
   const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=bfe56fdaa67647ad81f201951230808&q=${location}`);
