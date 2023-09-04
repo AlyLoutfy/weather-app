@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../src/assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Weather</title>
+  </head>
+  <body>
+    <header>
+      <div class="left"><img src="../src/assets/favicon.ico" alt="" width="50" /></div>
+      <div class="title">The Weather App</div>
+    </header>
+    <div id="content">
+      <div class="search-container">
+        <div class="search">
+          <input class="city" type="text" placeholder="Search City" value="Cairo" />
+          <button class="search-btn">
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="main-info">
+        <div class="condition">Sunny</div>
+        <div class="location">Egypt</div>
+        <div class="details-container">
+          <div class="temp">19</div>
+          <div class="details">
+            <div class="hum">HUMIDITY: <span class="hum-value">80</span>%</div>
+            <div class="wind">WIND: <span class="wind-value">5 </span> KPH</div>
+            <div class="feels">FEELS LIKE: <span class="feels-value">16</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
